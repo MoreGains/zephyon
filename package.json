@@ -1,0 +1,21 @@
+{
+  "name": "zephyon-backend",
+  "version": "1.0.0",
+  "description": "Zephyon backend build (Rust/Anchor + TypeScript tooling)",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "rpc": "ts-node rpc-ping.ts",
+    "start": "ts-node main.ts",
+    "build": "tsc",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4"
+  }
+}
